@@ -2,6 +2,7 @@
 //  TGViewController.m
 //  TravelGuides
 //
+//  this view controller will used to be general purpse.
 //  Created by jiecongwang on 2/15/14.
 //  Copyright (c) 2014 JiecongWang. All rights reserved.
 //
@@ -14,16 +15,11 @@
 
 @implementation TGViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(instancetype)initWithTitle:(NSString *)title{
+    if (self = [super init]) {
+        self.title = title;
+    }
+    return self;
 }
 
 @end
