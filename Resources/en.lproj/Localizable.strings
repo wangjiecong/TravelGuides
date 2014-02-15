@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  TravelGuides
+
+  Created by jiecongwang on 2/15/14.
+  Copyright (c) 2014 JiecongWang. All rights reserved.
+*/
+
+"GEO_SELECT_VIEW_CONTROLLER_TITLE" = "旅游锦囊";

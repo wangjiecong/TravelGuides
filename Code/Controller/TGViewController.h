@@ -11,6 +11,5 @@
 @interface TGViewController : UIViewController
 
 
--(instancetype) initWithTitle:(NSString *)title;
 
 @end

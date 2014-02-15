@@ -20,6 +20,8 @@
 		6BFB732718AFF6CB0058AF67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BFB732118AFF6CB0058AF67 /* Images.xcassets */; };
 		6BFB732818AFF6CB0058AF67 /* TravelGuides-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BFB732218AFF6CB0058AF67 /* TravelGuides-Info.plist */; };
 		6BFB733318AFF9320058AF67 /* TGGeoSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB733218AFF9320058AF67 /* TGGeoSelectViewController.m */; };
+		6BFB733F18B0060F0058AF67 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BFB734118B0060F0058AF67 /* Localizable.strings */; };
+		6BFB734718B007580058AF67 /* ColorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BFB734618B007580058AF67 /* ColorFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,11 @@
 		6BFB732218AFF6CB0058AF67 /* TravelGuides-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TravelGuides-Info.plist"; sourceTree = "<group>"; };
 		6BFB733118AFF9320058AF67 /* TGGeoSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGGeoSelectViewController.h; sourceTree = "<group>"; };
 		6BFB733218AFF9320058AF67 /* TGGeoSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGGeoSelectViewController.m; sourceTree = "<group>"; };
+		6BFB733E18B005FA0058AF67 /* zh-CN */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-CN"; path = "zh-CN.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		6BFB734018B0060F0058AF67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6BFB734218B006120058AF67 /* zh-CN */ = {isa = PBXFileReference; lastKnownFileType = file; name = "zh-CN"; path = "zh-CN.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6BFB734518B007580058AF67 /* ColorFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorFactory.h; sourceTree = "<group>"; };
+		6BFB734618B007580058AF67 /* ColorFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +121,7 @@
 				6BFB731C18AFF6CB0058AF67 /* TGAppDelegate.m */,
 				6BFB731D18AFF6CB0058AF67 /* TravelGuides-Prefix.pch */,
 				6BFB731718AFF6CB0058AF67 /* Controller */,
+				6BFB734418B007230058AF67 /* Helpers */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -133,10 +141,20 @@
 			isa = PBXGroup;
 			children = (
 				6BFB731F18AFF6CB0058AF67 /* InfoPlist.strings */,
+				6BFB734118B0060F0058AF67 /* Localizable.strings */,
 				6BFB732118AFF6CB0058AF67 /* Images.xcassets */,
 				6BFB732218AFF6CB0058AF67 /* TravelGuides-Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		6BFB734418B007230058AF67 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6BFB734518B007580058AF67 /* ColorFactory.h */,
+				6BFB734618B007580058AF67 /* ColorFactory.m */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +217,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-CN",
 			);
 			mainGroup = 6BFB72D518AFF47A0058AF67;
 			productRefGroup = 6BFB72DF18AFF47A0058AF67 /* Products */;
@@ -217,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BFB732818AFF6CB0058AF67 /* TravelGuides-Info.plist in Resources */,
+				6BFB733F18B0060F0058AF67 /* Localizable.strings in Resources */,
 				6BFB732618AFF6CB0058AF67 /* InfoPlist.strings in Resources */,
 				6BFB732718AFF6CB0058AF67 /* Images.xcassets in Resources */,
 			);
@@ -239,6 +259,7 @@
 				6BFB732418AFF6CB0058AF67 /* main.m in Sources */,
 				6BFB732318AFF6CB0058AF67 /* TGViewController.m in Sources */,
 				6BFB732518AFF6CB0058AF67 /* TGAppDelegate.m in Sources */,
+				6BFB734718B007580058AF67 /* ColorFactory.m in Sources */,
 				6BFB733318AFF9320058AF67 /* TGGeoSelectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,8 +286,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				6BFB732018AFF6CB0058AF67 /* en */,
+				6BFB733E18B005FA0058AF67 /* zh-CN */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6BFB734118B0060F0058AF67 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BFB734018B0060F0058AF67 /* en */,
+				6BFB734218B006120058AF67 /* zh-CN */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

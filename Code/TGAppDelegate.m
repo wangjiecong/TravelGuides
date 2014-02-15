@@ -14,9 +14,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    TGGeoSelectViewController *geoSelectViewController = [[TGGeoSelectViewController alloc] initWithTitle:@"旅游锦囊"];
+    TGGeoSelectViewController *geoSelectViewController = [[TGGeoSelectViewController alloc] init];
     self.nav = [[UINavigationController alloc] initWithRootViewController:geoSelectViewController];
     self.window.rootViewController =self.nav;
+    [self.window setBackgroundColor:[ColorFactory TGWhite]];
     [self.window makeKeyAndVisible];
     return YES;
 }
